@@ -1,4 +1,4 @@
-import CursorGlow from "@/components/CursorGlow";
+import ReticleCursor from "@/components/ReticleCursor";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -15,7 +15,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <CursorGlow />
+      <ReticleCursor />
       <Navbar />
       <HeroSection />
       <AboutSection />
