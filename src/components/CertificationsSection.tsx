@@ -5,13 +5,13 @@ const certs = [
     title: "Foundations of Prompt Engineering",
     issuer: "AWS",
     year: "2025",
-    link: "#",
+    link: "https://github.com/balaji676-glitch/Certificates/blob/main/AWS%20Prompt%20Engineering.pdf",
   },
   {
     title: "Database Management System",
     issuer: "MongoDB",
     year: "2025",
-    link: "https://bit.ly/4ku95x8",
+    link: "https://www.credly.com/users/balaji-p.becbce1a/badges#credly",
   },
 ];
 
