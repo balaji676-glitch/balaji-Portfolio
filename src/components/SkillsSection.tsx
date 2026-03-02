@@ -1,47 +1,48 @@
+import { useEffect, useRef, useState } from "react";
+
 const skills = [
-  { name: "Python", level: 90 },
-  { name: "Java", level: 75 },
-  { name: "JavaScript", level: 70 },
-  { name: "Machine Learning", level: 85 },
-  { name: "TensorFlow", level: 70 },
-  { name: "Scikit-learn", level: 80 },
-  { name: "NLP", level: 65 },
-  { name: "SQL / MongoDB", level: 75 },
-  { name: "Pandas / NumPy", level: 85 },
-  { name: "Power BI / Matplotlib", level: 70 },
+  "Python", "Java", "JavaScript", "Machine Learning", "TensorFlow",
+  "Scikit-learn", "NLP", "SQL", "MongoDB", "Git", "Power BI",
+  "Pandas", "NumPy",
 ];
 
-const tools = ["Git", "VS Code", "Jupyter Notebook", "TensorFlow", "Power BI"];
+const SkillsSection = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
-const SkillsSection = () => (
-  <section id="skills" className="py-20 px-4">
-    <div className="container mx-auto max-w-3xl section-fade">
-      <h2 className="font-display text-2xl md:text-3xl font-bold neon-text mb-10 text-center">SKILLS</h2>
-      <div className="space-y-4">
-        {skills.map((s) => (
-          <div key={s.name} className="group">
-            <div className="flex justify-between mb-1">
-              <span className="text-sm font-body text-foreground">{s.name}</span>
-              <span className="text-xs font-display text-primary">{s.level}%</span>
-            </div>
-            <div className="h-2 rounded-full bg-muted overflow-hidden">
-              <div
-                className="h-full rounded-full bg-primary animate-skill-fill"
-                style={{ "--skill-level": `${s.level}%`, width: `${s.level}%` } as React.CSSProperties}
-              />
-            </div>
-          </div>
-        ))}
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.15 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section id="skills" className="py-20 px-4">
+      <div ref={sectionRef} className="container mx-auto max-w-3xl">
+        <h2 className="font-display text-2xl md:text-3xl font-bold neon-text mb-12 text-center">
+          SKILLS
+        </h2>
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+          {skills.map((skill, i) => (
+            <span
+              key={skill}
+              className="skill-badge font-display text-xs md:text-sm tracking-wider px-5 py-2.5 rounded-full border border-primary/20 bg-card/60 backdrop-blur-sm text-primary cursor-default select-none transition-all duration-300 hover:border-primary/60 hover:shadow-[0_0_12px_hsl(var(--primary)/0.4),0_0_30px_hsl(var(--primary)/0.15)] hover:scale-105"
+              style={{
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(20px)",
+                transition: `opacity 0.6s ease-out ${i * 0.1}s, transform 0.6s ease-out ${i * 0.1}s, border-color 0.3s, box-shadow 0.3s, scale 0.3s`,
+              }}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </div>
-      <div className="mt-10 flex flex-wrap gap-3 justify-center">
-        {tools.map((t) => (
-          <span key={t} className="glass-card px-4 py-2 text-xs font-display tracking-wider text-primary neon-border-hover border border-glass cursor-default">
-            {t}
-          </span>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default SkillsSection;
