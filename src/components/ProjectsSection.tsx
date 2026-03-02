@@ -22,7 +22,7 @@ const ProjectsSection = () => (
         </div>
         <div className="flex gap-3">
           <a
-            href="https://bit.ly/4jp6CoZ"
+            href="https://github.com/balaji676-glitch/Tech-Interview-Survival-Bot"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 text-xs font-display tracking-wider bg-primary text-primary-foreground rounded-md neon-border-hover"
@@ -30,7 +30,7 @@ const ProjectsSection = () => (
             <ExternalLink size={14} /> LIVE DEMO
           </a>
           <a
-            href="https://bit.ly/4jp6CoZ"
+            href="https://github.com/balaji676-glitch/Tech-Interview-Survival-Bot"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 text-xs font-display tracking-wider border border-primary/40 text-primary rounded-md neon-border-hover"
