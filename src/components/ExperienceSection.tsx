@@ -8,7 +8,7 @@ const experiences = [
       "Explored AI-driven solutions for real-world problem scenarios.",
       "Contributed to data-driven project implementation and analysis.",
     ],
-    link: "https://github.com/balaji676-glitch/Certificates/blob/main/Saiket-Intern.pdf",
+    link: "https://github.com/balaji676-glitch/Certificates/blob/main/saiket_certificate.png",
   },
   {
     company: "Tata Consultancy Services",
@@ -19,7 +19,7 @@ const experiences = [
       "Developed predictive models to identify delinquency patterns.",
       "Created business reports and data storytelling presentations.",
     ],
-    link: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_68d8104bfcbd11287cc4455b_1766246121175_completion_certificate.pdf",
+    link: "https://github.com/balaji676-glitch/Certificates/blob/main/Tata%20forage(Gen%20ai%20powered%20data%20analytics).pdf",
   },
 ];
 
