@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balaji P · Resume</title>
-    <!-- Font Awesome for icons (including resume icon) -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -24,7 +24,7 @@
             padding: 2rem 1.5rem;
         }
 
-        /* main resume card — clean, glass, focused */
+        /* main resume card */
         .resume-document {
             max-width: 1000px;
             width: 100%;
@@ -35,10 +35,9 @@
             border-radius: 2.8rem;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(90, 140, 255, 0.2) inset;
             padding: 2.5rem;
-            transition: 0.2s;
         }
 
-        /* subtle top bar with "resume" icon and label – feels like a section */
+        /* resume icon header */
         .resume-badge {
             display: flex;
             align-items: center;
@@ -61,7 +60,6 @@
             font-size: 1.8rem;
             font-weight: 500;
             color: #e0e7ff;
-            letter-spacing: -0.5px;
         }
 
         .resume-badge small {
@@ -74,7 +72,7 @@
             border: 1px solid #2d3b5a;
         }
 
-        /* header (name / title) – minimal, matches your "Balaji P AIML Engineer" */
+        /* name and title */
         .name-title {
             margin-bottom: 2rem;
         }
@@ -107,7 +105,7 @@
             color: #ccdcff;
         }
 
-        /* summary - your original paragraph */
+        /* summary section */
         .summary {
             background: rgba(10, 12, 25, 0.7);
             border-radius: 2rem;
@@ -124,7 +122,7 @@
             margin-right: 0.5rem;
         }
 
-        /* two columns for compact resume info */
+        /* two column layout */
         .resume-columns {
             display: grid;
             grid-template-columns: 1.6fr 1fr;
@@ -155,12 +153,6 @@
             padding: 1.6rem;
             margin-bottom: 1.5rem;
             border: 1px solid rgba(255,255,255,0.02);
-            transition: 0.2s;
-        }
-
-        .exp-card:hover {
-            background: rgba(27, 30, 47, 0.8);
-            border-color: #2f4172;
         }
 
         .exp-header {
@@ -257,7 +249,7 @@
             gap: 5px;
         }
 
-        /* right column blocks */
+        /* skills block */
         .skill-block {
             background: rgba(20, 22, 36, 0.6);
             border-radius: 2rem;
@@ -294,6 +286,7 @@
             font-size: 0.9rem;
         }
 
+        /* certifications */
         .cert-item {
             display: flex;
             align-items: center;
@@ -313,6 +306,7 @@
             border-bottom: 1px dotted #3b82f6;
         }
 
+        /* education */
         .edu-item {
             display: flex;
             gap: 1rem;
@@ -335,7 +329,7 @@
             color: #9aafe0;
         }
 
-        /* very light footer just saying "resume" */
+        /* footer */
         .resume-footer-note {
             margin-top: 2.5rem;
             text-align: center;
@@ -360,36 +354,36 @@
 </head>
 <body>
     <div class="resume-document">
-        <!-- this top badge acts as the "resume icon / section" – if clicked from portfolio, user lands here -->
+        <!-- resume icon header -->
         <div class="resume-badge">
-            <i class="fas fa-file-alt"></i>   <!-- classic resume icon -->
+            <i class="fas fa-file-alt"></i>
             <span>Resume</span>
-            <small> <i class="fas fa-download"></i> Balaji P · AIML</small>
+            <small>Balaji P · AIML Engineer</small>
         </div>
 
-        <!-- name + title exactly as in your screenshot -->
+        <!-- name and title -->
         <div class="name-title">
             <h1>Balaji P</h1>
             <div class="sub">
                 <i class="fas fa-brain"></i> AIML Engineer
-                <i><i class="fas fa-microchip"></i> Building Intelligent Systems</i>
+                <i>Building Intelligent Systems</i>
             </div>
         </div>
 
-        <!-- summary (full from your pdf) -->
+        <!-- summary section -->
         <div class="summary">
             <i class="fas fa-quote-right"></i>
             Pre-final year B.Tech student in Artificial Intelligence and Data Science with experience in Python, Java, and JavaScript for AI development and data analysis. Built AI projects including a Tech Interview Survival Bot designed to assist students with technical interview preparation using intelligent chatbot capabilities. Completed industry internships and AI simulations involving exploratory data analysis, predictive modeling, and data visualization with real-world datasets. Able to translate technical concepts into practical solutions, with strong interest in applied AI, Machine Learning, and data-driven problem solving.
         </div>
 
-        <!-- resume details in columns (compact) -->
+        <!-- main content columns -->
         <div class="resume-columns">
-            <!-- left column: experience + project -->
+            <!-- left column: experience and project -->
             <div>
-                <!-- experience -->
+                <!-- experience section -->
                 <div class="sec-head"><i class="fas fa-briefcase"></i> EXPERIENCE</div>
 
-                <!-- TCS -->
+                <!-- TCS internship -->
                 <div class="exp-card">
                     <div class="exp-header">
                         <h3>TATA CONSULTANCY SERVICES</h3>
@@ -400,10 +394,10 @@
                         <li><i class="fas fa-robot"></i> Developed predictive models to identify delinquency patterns and support data-driven decision making.</li>
                         <li><i class="fas fa-file-presentation"></i> Created business reports, data storytelling presentations, and an AI-driven collections approach for strategic optimization.</li>
                     </ul>
-                    <div class="proof"><i class="fas fa-link"></i> <a href="#">bit.ly/4kA9luI</a> (proof of completion)</div>
+                    <div class="proof"><i class="fas fa-link"></i> <a href="https://bit.ly/4kA9luI" target="_blank">bit.ly/4kA9luI</a> (proof of completion)</div>
                 </div>
 
-                <!-- Saiket -->
+                <!-- Saiket Systems internship -->
                 <div class="exp-card">
                     <div class="exp-header">
                         <h3>Saiket Systems (MSME APPROVED)</h3>
@@ -414,24 +408,24 @@
                         <li><i class="fas fa-search"></i> Explored AI-driven solutions for real-world problem scenarios.</li>
                         <li><i class="fas fa-database"></i> Contributed to data-driven project implementation and analysis.</li>
                     </ul>
-                    <div class="proof"><i class="fas fa-link"></i> <a href="#">https://bit.ly/4sqeD9</a> (proof)</div>
+                    <div class="proof"><i class="fas fa-link"></i> <a href="https://bit.ly/4sqeD9" target="_blank">https://bit.ly/4sqeD9</a> (proof)</div>
                 </div>
 
-                <!-- PROJECT -->
+                <!-- project section -->
                 <div class="sec-head" style="margin-top: 0.5rem;"><i class="fas fa-microchip"></i> PROJECT</div>
                 <div class="project-block">
-                    <h3>🤖 Tech Interview Survival Bot</h3>
+                    <h3>Tech Interview Survival Bot</h3>
                     <span class="project-tag">LLM · RAG · Python</span>
                     <div class="project-desc">
                         Built an AI chatbot to help students prepare for technical interviews. Generates coding questions, explanations, and structured responses. Uses LLM integration for realistic mock interview support.
                     </div>
-                    <a href="#" class="project-link"><i class="fab fa-github"></i> github repo · bit.ly/4ip6CoZ</a>
+                    <a href="https://bit.ly/4ip6CoZ" target="_blank" class="project-link"><i class="fab fa-github"></i> github repo · bit.ly/4ip6CoZ</a>
                 </div>
             </div>
 
-            <!-- right column: skills + certs + education -->
+            <!-- right column: skills, certifications, education -->
             <div>
-                <!-- skills -->
+                <!-- skills section -->
                 <div class="skill-block">
                     <div class="sec-head" style="border-left-color: #22d3ee;"><i class="fas fa-cogs"></i> SKILLS</div>
                     <div class="skill-cat">
@@ -448,14 +442,14 @@
                     </div>
                 </div>
 
-                <!-- certifications -->
+                <!-- certifications section -->
                 <div class="skill-block">
                     <div class="sec-head" style="border-left-color: #c084fc;"><i class="fas fa-certificate"></i> CERTIFICATIONS</div>
-                    <div class="cert-item"><i class="fas fa-database"></i> Database Management System (MongoDB, 2025) · <a href="#">bit.ly/4ku95x8</a></div>
-                    <div class="cert-item"><i class="fas fa-cloud"></i> Foundations Of Prompt Engineering (AWS, 2025) · <a href="#">View Certificate</a></div>
+                    <div class="cert-item"><i class="fas fa-database"></i> Database Management System (MongoDB, 2025) · <a href="https://bit.ly/4ku95x8" target="_blank">bit.ly/4ku95x8</a></div>
+                    <div class="cert-item"><i class="fas fa-cloud"></i> Foundations Of Prompt Engineering (AWS, 2025) · <a href="#" target="_blank">View Certificate</a></div>
                 </div>
 
-                <!-- education -->
+                <!-- education section -->
                 <div class="edu-item">
                     <i class="fas fa-university"></i>
                     <div class="edu-text">
@@ -464,17 +458,17 @@
                     </div>
                 </div>
 
-                <!-- small contact hint (optional) but you can ignore -->
+                <!-- contact info -->
                 <div style="margin-top: 1.5rem; background: #151d30; border-radius: 3rem; padding: 0.8rem 1.5rem; text-align: center; border: 1px solid #2c3858;">
                     <span style="color: #b7caf5;"><i class="fas fa-envelope"></i> balaji.p@portfolio | </span>
-                    <span style="color: #b7caf5;"><i class="fab fa-github"></i> balaji-ai</span>
+                    <span style="color: #b7caf5;"><i class="fab fa-github"></i> balaji676-glitch</span>
                 </div>
             </div>
         </div>
 
-        <!-- tiny footer with "resume icon" reminder / just for style -->
+        <!-- footer -->
         <div class="resume-footer-note">
-            <i class="fas fa-file-alt"></i> full resume · Balaji P · AIML Engineer <i class="fas fa-external-link-alt"></i>
+            <i class="fas fa-file-alt"></i> Balaji P · AIML Engineer · Resume <i class="fas fa-external-link-alt"></i>
         </div>
     </div>
 </body>
